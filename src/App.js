@@ -20,6 +20,8 @@ import $ from 'jquery'
                                       => render
                                       => componentDidUpdate() ==> 수정
 
+=================================================================================
+
                           function : props, state(x) => state를 관리하는 프로그램
                                                         =====
                                                         데이터
@@ -32,7 +34,9 @@ import $ from 'jquery'
                          state를 사용 ==> useState()
                          !! (state를 사용하는 이유) : setState()를 이용해서 render를 호출( 값을 변경해주기 위해서 )
                          => const [page,setPage] = useState(1);
+                              var page
                          ==> setPage(2) ==> render()
+                              => reload() => 함수 호출
 
                          ??  state.page=1 :: state에 값이 저장되지만 state 를 통해 사용할 수 없음
                          !! setPage(1) :: setState()메서드를 통해서 값이 저장
